@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+
+    <!-- Title -->
+    <title>Bali Golden Land</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/common/favicon.ico" type="image/x-icon">
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&amp;family=Poppins:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <!-- fontawesome Icon CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/vendors/bootstrap.min.css">
+    <!-- Data Tables CSS -->
+    <link rel="stylesheet" href="./assets/css/vendors/datatables.min.css">
+    <!-- Date-range Picker -->
+    <link rel="stylesheet" href="./assets/css/vendors/daterangepicker.css">
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="./assets/css/vendors/magnific-popup.min.css">
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="./assets/css/vendors/swiper-bundle.min.css">
+    <!-- Nice Select -->
+    <link rel="stylesheet" href="./assets/css/vendors/nice-select.css">
+    <!-- NoUi Range Slider -->
+    <link rel="stylesheet" href="./assets/css/vendors/nouislider.min.css">
+    <!--====== Stepper css ======-->
+    <link rel="stylesheet" href="./assets/css/vendors/bs-stepper.min.css">
+    <!--====== calendar css ======-->
+    <link rel="stylesheet" href="./assets/css/vendors/pignose.calendar.min.css">
+    <!-- AOS Animation CSS -->
+    <link rel="stylesheet" href="./assets/css/vendors/aos.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="./assets/css/vendors/animate.min.css">
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body class="theme-color-2">
+    <!-- Preloader start -->
+    <div id="preLoader">
+        <div class="loader"></div>
+    </div>
+    <!-- Preloader end -->
+
+    <!-- Header-area start -->
+    <header class="header-area header-2 is-sticky !tw-bg-primary">
+        <!-- End mobile menu -->
+        <div class="main-navbar">
+            <div class="container">
+                <nav class="navbar tw-h-[60px] lg:tw-h-[84px] tw-flex tw-justify-between tw-items-center">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index.html" target="_self" title="Bali Golden Land">
+                        <img src="./assets/images/common/logo.webp" alt="Logo" width="350" class="tw-w-[250px] lg:tw-w-[350px]">
+                    </a>
+                    <div class="more-option mobile-item">
+                        <div class="item">
+                            <a href="contact.html" class="btn btn-md !tw-bg-white !tw-text-primary hover:!tw-text-primary tw-border tw-border-solid tw-border-white rounded-pill tw-font-bold max-md:tw-px-[15px] max-md:tw-py-[10px]" title="Contact" target="_self">
+                                <span class="tw-hidden lg:tw-block">Contact Us</span>
+                                <i class="fa fa-phone tw-block lg:tw-hidden"></i>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Header-area end -->
+
+    <!-- Page title start-->
+    <div class="page-title-area bg-img bg-cover tw-mt-[60px] lg:tw-mt-[84px] tw-relative" data-bg-image="assets/images/banner.jpg">
+        <div class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full tw-bg-black/40"></div>
+        <div class="container tw-relative">
+            <div class="content">
+                <h2 class="tw-text-[40px] lg:tw-tex-[64px]">Bali Land Listings</h2>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Listings</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Page title end-->
+
+    <!-- Listing-area start -->
+    <div class="listing-area pt-100">
+        <div class="container">
+            <div class="row gx-xl-5">
+                <!-- Sidebar Filters -->
+                <div class="col-lg-3 tw-hidden lg:tw-block">
+                    <aside class="widget-area" data-aos="fade-up">
+                        <!-- Categories Filter -->
+                        <div class="widget widget-categories mb-30 p-20 border radius-md">
+                            <h5 class="title">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#categories">
+                                    Land Categories
+                                </button>
+                            </h5>
+                            <div id="categories" class="collapse show">
+                                <div class="accordion-body mt-20 scroll-y">
+                                    <ul class="list-group custom-radio">
+                                        <li>
+                                            <input class="input-radio" type="radio" name="sort" id="allLands" value="allLands">
+                                            <label class="form-radio-label" for="allLands"><span>All Lands</span></label>
+                                        </li>
+                                        <li>
+                                            <input class="input-radio" type="radio" name="sort" id="beachfront" value="beachfront">
+                                            <label class="form-radio-label" for="beachfront"><span>Beachfront</span></label>
+                                        </li>
+                                        <li>
+                                            <input class="input-radio" type="radio" name="sort" id="riceField" value="riceField">
+                                            <label class="form-radio-label" for="riceField"><span>Rice Field View</span></label>
+                                        </li>
+                                        <li>
+                                            <input class="input-radio" type="radio" name="sort" id="mountain" value="mountain">
+                                            <label class="form-radio-label" for="mountain"><span>Mountain View</span></label>
+                                        </li>
+                                        <li>
+                                            <input class="input-radio" type="radio" name="sort" id="riverside" value="riverside">
+                                            <label class="form-radio-label" for="riverside"><span>Riverside</span></label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Location Filter -->
+                        <div class="widget widget-select mb-30 p-20 border radius-md">
+                            <h5 class="title">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#location">
+                                    Location
+                                </button>
+                            </h5>
+                            <div id="location" class="collapse show">
+                                <div class="accordion-body mt-20 scroll-y">
+                                    <div class="form-group">
+                                        <select class="form-select form-control">
+                                            <option value="all">All Locations</option>
+                                            <option value="tabanan">Tabanan</option>
+                                            <option value="canggu">Canggu</option>
+                                            <option value="uluwatu">Uluwatu</option>
+                                            <option value="ubud">Ubud</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pricing Filter -->
+                        <div class="widget widget-price mb-30 p-20 border radius-md">
+                            <h5 class="title">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#price" aria-expanded="true" aria-controls="price">
+                                    Price Range
+                                </button>
+                            </h5>
+                            <div id="price" class="collapse show">
+                                <div class="accordion-body mt-20 scroll-y">
+                                    <div class="row gx-sm-3">
+                                        <div class="col-md-6">
+                                            <div class="form-group mb-20">
+                                                <label class="mb-1 color-dark">Minimum</label>
+                                                <input class="form-control" type="number" name="min" id="min" placeholder="e.g., 50000">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group mb-20">
+                                                <label class="mb-1 color-dark">Maximum</label>
+                                                <input class="form-control" type="number" name="max" id="max" placeholder="e.g., 500000">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sort By Filter -->
+                        <div class="widget widget-sort mb-30 p-20 border radius-md">
+                            <h5 class="title">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#sort" aria-expanded="true" aria-controls="sort">
+                                    Sort By
+                                </button>
+                            </h5>
+                            <div id="sort" class="collapse show">
+                                <div class="accordion-body mt-20 scroll-y">
+                                    <ul class="list-group custom-radio">
+                                        <li>
+                                            <input class="input-radio" type="radio" name="sort" id="recent" value="recent">
+                                            <label class="form-radio-label" for="recent"><span>Most Recent</span></label>
+                                        </li>
+                                        <li>
+                                            <input class="input-radio" type="radio" name="sort" id="priceLow" value="priceLow">
+                                            <label class="form-radio-label" for="priceLow"><span>Price: Low to High</span></label>
+                                        </li>
+                                        <li>
+                                            <input class="input-radio" type="radio" name="sort" id="priceHigh" value="priceHigh">
+                                            <label class="form-radio-label" for="priceHigh"><span>Price: High to Low</span></label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Search Button -->
+                        <div class="cta pb-40">
+                            <button class="btn btn-lg btn-primary btn-gradient icon-end w-100" type="submit">Search Now<i class="fal fa-search"></i></button>
+                        </div>
+                    </aside>
+                </div>
+
+                <!-- Listings -->
+                <div class="col-lg-9">
+                    <div class="sort-area aos-init aos-animate" data-aos="fade-up">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <h5 class="mb-20">We Found <span class="color-primary tw-text-[24px]">3</span> Lands for You</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Sample Land Listing -->
+                        <div class="col-lg-4 col-sm-6" data-aos="fade-up">
+                            <div class="product-default border radius-md p-15 mb-25">
+                                <figure class="product-img mb-15">
+                                    <a href="listing-details.html" title="Image" target="_self" class="lazy-container radius-sm ratio ratio-2-3">
+                                        <img class="lazyload" src="./assets/images/land.jpg" data-src="./assets/images/land.jpg" alt="Land">
+                                    </a>
+                                </figure>
+                                <div class="product-details">
+                                    <h6 class="product-title mb-0">
+                                        <a href="listing-details.html" target="_self" title="Spacious Rice Field View Plot">Spacious Rice Field View Plot</a>
+                                    </h6>
+                                    <span class="font-sm icon-start"><i class="fal fa-map-marker-alt"></i>Size: 1,500 sqm</span>
+                                    <div class="d-flex align-items-center justify-content-between gap-2 mt-10">
+                                        <div class="product-price">
+                                            <span class="h6 new-price">$120,000</span>
+                                            <span class="prev-price font-sm">$150,000</span>
+                                        </div>
+                                        <a href="listing-details.html" class="btn btn-sm btn-outline-2 rounded-pill" title="Inquire Now" target="_self">Inquire Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6" data-aos="fade-up">
+                            <div class="product-default border radius-md p-15 mb-25">
+                                <figure class="product-img mb-15">
+                                    <a href="listing-details.html" title="Image" target="_self" class="lazy-container radius-sm ratio ratio-2-3">
+                                        <img class="lazyload" src="./assets/images/land-2.jpg" data-src="./assets/images/land-2.jpg" alt="Land">
+                                    </a>
+                                </figure>
+                                <div class="product-details">
+                                    <h6 class="product-title mb-0">
+                                        <a href="listing-details.html" target="_self" title="Riverside Land Near Jatiluwih">Riverside Land Near Jatiluwih</a>
+                                    </h6>
+                                    <span class="font-sm icon-start"><i class="fal fa-map-marker-alt"></i>Size: 2,000 sqm</span>
+                                    <div class="d-flex align-items-center justify-content-between gap-2 mt-10">
+                                        <div class="product-price">
+                                            <span class="h6 new-price">$180,000</span>
+                                            <span class="prev-price font-sm">$200,000</span>
+                                        </div>
+                                        <a href="listing-details.html" class="btn btn-sm btn-outline-2 rounded-pill" title="Inquire Now" target="_self">Inquire Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6" data-aos="fade-up">
+                            <div class="product-default border radius-md p-15 mb-25">
+                                <figure class="product-img mb-15">
+                                    <a href="listing-details.html" title="Image" target="_self" class="lazy-container radius-sm ratio ratio-2-3">
+                                        <img class="lazyload" src="./assets/images/land-3.jpg" data-src="./assets/images/land-3.jpg" alt="Land">
+                                    </a>
+                                </figure>
+                                <div class="product-details">
+                                    <h6 class="product-title mb-0">
+                                        <a href="listing-details.html" target="_self" title="Beachside Land in Kedungu">Beachside Land in Kedungu</a>
+                                    </h6>
+                                    <span class="font-sm icon-start"><i class="fal fa-map-marker-alt"></i>Size: 1,000 sqm</span>
+                                    <div class="d-flex align-items-center justify-content-between gap-2 mt-10">
+                                        <div class="product-price">
+                                            <span class="h6 new-price">$250,000</span>
+                                            <span class="prev-price font-sm">$300,000</span>
+                                        </div>
+                                        <a href="listing-details.html" class="btn btn-sm btn-outline-2 rounded-pill" title="Inquire Now" target="_self">Inquire Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Repeat Listings -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Listing-area end -->
+
+
+    <!-- Footer-area start -->
+    <footer class="footer-area tw-mt-[120px] bg-primary-light">
+        <div class="go-top"><i class="fa fa-long-arrow-up"></i></div>
+        <div class="footer-top pt-100 pb-70 text-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6" data-aos="fade-up">
+                        <div class="navbar-brand mt-10">
+                            <span></span>
+                            <a href="index.html" target="_self" title="Link">
+                                <img src="./assets/images/common/logo-red.webp" alt="Logo">
+                            </a>
+                            <span></span>
+                        </div>
+                        <ul class="info-list mt-20">
+                            <li>
+                                <a href="mailto:info@baligoldenland.id">info@baligoldenland.id</a>
+                            </li>
+                            <li>
+                                <a href="tel:+628123456789">+62 812 345 6789</a>
+                            </li>
+                        </ul>
+                        <div class="newsletter-form mx-auto mt-30">
+                            <form id="newsletterForm">
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Enter email here..." type="text" name="EMAIL" required="" autocomplete="off">
+                                    <button class="btn btn-md btn-primary btn-gradient no-animation" type="submit">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right-area border-top ptb-30">
+            <div class="container">
+                <div class="copy-right-content">
+                    <span>
+                        &copy;2024 <a href="https://adiyoga.my.id" target="_blank" title="Bali Golden Land" class="color-primary">Bali Golden Land</a>. All Rights Reserved
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer-area end-->
+
+    <!-- Jquery JS -->
+    <script src="./assets/js/vendors/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="./assets/js/vendors/bootstrap.min.js"></script>
+    <!-- Data Tables JS -->
+    <script src="./assets/js/vendors/datatables.min.js"></script>
+    <!-- Date-range Picker JS -->
+    <script src="./assets/js/vendors/moment.min.js"></script>
+    <script src="./assets/js/vendors/daterangepicker.js"></script>
+    <!-- Nice Select JS -->
+    <script src="./assets/js/vendors/jquery.nice-select.min.js"></script>
+    <!-- Magnific Popup JS -->
+    <script src="./assets/js/vendors/jquery.magnific-popup.min.js"></script>
+    <!-- Calendar js -->
+    <script src="./assets/js/vendors/pignose.calendar.full.min.js"></script>
+    <!-- Swiper Slider JS -->
+    <script src="./assets/js/vendors/swiper-bundle.min.js"></script>
+    <!-- Lazysizes -->
+    <script src="./assets/js/vendors/lazysizes.min.js"></script>
+    <!-- Noui Range Slider JS -->
+    <script src="./assets/js/vendors/nouislider.min.js"></script>
+    <!-- Twinmax JS -->
+    <script src="./assets/js/vendors/tweenMax.min.js"></script>
+    <!-- Simple Parallax JS -->
+    <script src="./assets/js/vendors/parallax.min.js"></script>
+    <!-- AOS JS -->
+    <script src="./assets/js/vendors/aos.min.js"></script>
+    <!-- Mouse Hover JS -->
+    <script src="./assets/js/vendors/mouse-hover-move.js"></script>
+    <!--====== Stepper js ======-->
+    <script src="./assets/js/vendors/bs-stepper.min.js"></script>
+    <!-- Main script JS -->
+    <script src="./assets/js/script.js"></script>
+</body>
+</html> 
