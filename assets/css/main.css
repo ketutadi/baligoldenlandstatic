@@ -575,9 +575,25 @@ html, body {
   top: 0px;
 }
 
+.tw-z-10 {
+  z-index: 10;
+}
+
+.tw-z-\[2\] {
+  z-index: 2;
+}
+
+.tw-z-\[99\] {
+  z-index: 99;
+}
+
 .tw-mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.\!tw-ml-0 {
+  margin-left: 0px !important;
 }
 
 .tw-mt-\[120px\] {
@@ -586,10 +602,6 @@ html, body {
 
 .tw-mt-\[60px\] {
   margin-top: 60px;
-}
-
-.\!tw-ml-0 {
-  margin-left: 0px !important;
 }
 
 .tw-block {
@@ -679,6 +691,19 @@ html, body {
   background-color: rgb(0 0 0 / 0.4);
 }
 
+.tw-bg-black\/30 {
+  background-color: rgb(0 0 0 / 0.3);
+}
+
+.tw-object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.\!tw-text-\[80px\] {
+  font-size: 80px !important;
+}
+
 .tw-text-\[24px\] {
   font-size: 24px;
 }
@@ -693,10 +718,6 @@ html, body {
 
 .tw-text-\[48px\] {
   font-size: 48px;
-}
-
-.\!tw-text-\[80px\] {
-  font-size: 80px !important;
 }
 
 .tw-font-bold {
