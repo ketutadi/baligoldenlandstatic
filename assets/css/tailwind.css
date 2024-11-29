@@ -7,3 +7,9 @@
         @apply tw-text-[16px] tw-font-poppins;
     }
 }
+
+.custom-mv #player{
+    top: 0!important;
+    width: 100%!important;
+    height: 100vh!important;
+}
