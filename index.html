@@ -15,6 +15,7 @@
 
     <!-- Google font -->
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&amp;family=Poppins:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/font.css">
     <!-- fontawesome Icon CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <!-- Bootstrap CSS -->
@@ -81,18 +82,21 @@
     <!-- Home-area start-->
     <section class="tw-relative hero-banner hero-banner-2 pb-100 parallax-window  tw-mt-[60px] lg:tw-mt-[84px]">
         <video width="100%" height="100%" class="tw-absolute tw-left-0 tw-top-0 tw-w-full tw-h-full tw-object-cover" autoplay="1" loop="1" muted="1" preload>
-            <source src="./assets/images/mv-bgl-new.mp4" type="video/mp4">
+            <source src="./assets/images/update-mv.mp4" type="video/mp4">
           </video>
-        <div class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full tw-bg-black/30 tw-z-[2]"></div>
+        <div class="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full tw-bg-black/20 tw-z-[2]"></div>
         <div class="container tw-relative tw-z-[99]">
             <div class="banner-content mx-auto text-center !tw-max-w-full">
-                <h1 class="title tw-text-gold mb-30 tw-text-[48px] lg:tw-text-[80px]" data-aos="fade-up" data-aos-delay="100">
-                    Find Your Dream Land in Bali
+                <h1 class="title tw-text-gold mb-30 tw-text-[48px] lg:tw-text-[80px] text-mv" data-aos="fade-up" data-aos-delay="100">
+                    Dream Land in Bali
                 </h1>
-                <p class="text color-white mx-auto" data-aos="fade-up" data-aos-delay="100">
+                <h1 class="title tw-text-gold mb-30 tw-text-[48px] lg:tw-text-[80px] text-end-mv tw-hidden !tw-opacity-0">
+                    With Bali Golden Land
+                </h1>
+                <p class="text color-white mx-auto text-desc-mv tw-opacity-0">
                     Explore Exclusive Listings with Stunning Views, Strategic Locations, and Unmatched Investment Potential.
                 </p>
-                <div class="banner-filter-form mx-auto mt-40 tw-max-w-[250px] tw-mx-auto" data-aos="fade-up" data-aos-delay="150">
+                <div class="banner-filter-form mx-auto mt-40 tw-max-w-[250px] tw-mx-auto btn-mv tw-opacity-0">
                     <a href="listing.html" class="btn btn-lg btn-primary rounded-pill btn-gradient w-100">
                         Find Now
                     </a>
@@ -141,7 +145,7 @@
                                     <img class="lazyload tw-rounded-full tw-w-[150px] lg:tw-w-[200px]" src="./assets/images/negotiate.webp" data-src="./assets/images/negotiate.webp" alt="Image">
                                 </div>
                                 <h4 class="card-title lc-1 mb-0 tw-text-[24px]">
-                                    Negotiate 
+                                    Inquiry 
                                 </h4>
                                 <span class="h1 color-primary stroke-gradient !tw-text-[80px] max-md:!tw-left-0">03</span>
                             </div>
@@ -269,15 +273,15 @@
     <!-- Action banner start -->
     <section class="action-banner">
         <div class="container">
-            <div class="wrapper radius-md pt-40 px-60 bg-img bg-cover" data-bg-image="assets/images/img-1.jpeg">
-                <div class="row align-items-center gx-xl-5">
-                    <div class="col-lg-6">
-                        <div class="content-title mb-40" data-aos="fade-up">
-                            <h2 class="title color-white mb-25 tw-text-[32px] lg:tw-text-[48px]">
-                                Discover Exclusive Land Deals in Bali
+            <div class="tw-relative wrapper radius-md tw-py-[64px] px-60 bg-img bg-cover !tw-bg-top" data-bg-image="assets/images/img-land.webp">
+                <div class="tw-absolute tw-top-0 tw-left-0 tw-bottom-0 tw-w-full tw-bg-black/30 radius-md"></div>
+                <div class="row align-items-center gx-xl-5 tw-relative">
+                    <div class="col-lg-10">
+                        <div class="content-title !tw-max-w-full" data-aos="fade-up">
+                            <h2 class="title mb-25 tw-text-[30px] lg:tw-text-[40px] tw-font-quakiez tw-drop-shadow-sm !tw-text-white" style="text-shadow: 1px 4px 10px #000000bd;">
+                                A piece of paradise for just $19,000 USD<br/>(freehold, pink zone)
                             </h2>
-                            <p class="color-light">Invest in prime land in Tabanan and beyond – Your dream property awaits!</p>
-                            <div class="mt-30">
+                            <div class="!tw-mt-12">
                                 <a href="javaScript:void(0)" class="btn btn-lg btn-primary btn-gradient icon-start rounded-pill" data-bs-toggle="modal" data-bs-target="#makeBooking" title="Inquire Now" target="_self"><i class="fal fa-calendar-check"></i>Explore Listings Now</a>
                             </div>
                         </div>
@@ -367,5 +371,27 @@
     <script src="./assets/js/vendors/bs-stepper.min.js"></script>
     <!-- Main script JS -->
     <script src="./assets/js/script.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $text = $('.text-mv');
+            setTimeout(function () {
+                $text.css('opacity', '0');
+
+                setTimeout(function () {
+                    $text.addClass('tw-hidden');
+                    $('.text-end-mv').removeClass('tw-hidden');
+                }, 500);
+
+            }, 5000);
+
+            setTimeout(function () {
+                $('.text-end-mv').removeClass('!tw-opacity-0');
+                $('.text-desc-mv').removeClass('tw-opacity-0');
+                $('.btn-mv').removeClass('tw-opacity-0');
+            }, 25000);
+        })
+    </script>
 </body>
 </html>

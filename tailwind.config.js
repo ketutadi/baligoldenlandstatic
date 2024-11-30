@@ -18,6 +18,7 @@ module.exports = {
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],
         'fira': ['Fira Sans', 'sans-serif'],
+        'quakiez': ['"quakiez"', 'sans-serif'],
       }
     },
   },
